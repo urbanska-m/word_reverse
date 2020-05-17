@@ -14,3 +14,25 @@
 //     return arrayToString;
 // }
 // // doesn't work because reverses order of words
+
+function reverseString() {
+    const str = document.getElementById('stringInput').value;
+    const separatedString = str.split(' ');
+    // splits sting into array of words
+    // now can reverse each word
+
+    const reversedArray = [];
+
+    for (let i = 0; i < separatedString.length; i++) {
+        let word = separatedString[i];
+        let subArray = Array.from(word);
+        let reversedWords = subArray.reverse();
+        let joinedWords = reversedWords.join("");
+        reversedArray.push(joinedWords + ' ');
+    }
+
+    let output = reversedArray.join("");
+    document.getElementById('stringOutput').value = output;
+}
+
+document.getElementById('submit').addEventListener('click', reverseString);
