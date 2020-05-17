@@ -1,3 +1,18 @@
 body {
     background-color: aquamarine;
 }
+
+h1 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 4.5em;
+    margin: 8% auto 7% auto;
+}
+
+#stringInput {
+    margin-right: 10px;
+}
+
+#stringOutput {
+    margin-top: 50px;
+    height: 100px;
+}
