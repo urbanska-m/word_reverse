@@ -15,8 +15,14 @@
 // }
 // // doesn't work because reverses order of words
 
+
 function reverseString() {
     const str = document.getElementById('stringInput').value;
+    const validChars = /^[a-z ]+$/;
+  if (!str.match(validChars)) {
+    alert("Input must not include numbers, special characters, or uppercase letters.");
+    return false;
+  } 
     const separatedString = str.split(' ');
     // splits sting into array of words
     // now can reverse each word
