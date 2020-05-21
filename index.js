@@ -24,7 +24,7 @@ function reverseString() {
     return false;
   } 
     const separatedString = str.split(' ');
-    // splits sting into array of words
+    // splits string into array of words
     // now can reverse each word
 
     const reversedArray = [];
